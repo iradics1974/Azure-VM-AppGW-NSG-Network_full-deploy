@@ -12,7 +12,7 @@ module "my_vnet" {
   resource_group_name = "myTFResourceGroup"
   location            = "East US"
 }
-/*
+
 # Network Security Group Module
 module "my_nsg" {
   source              = "./network-security-group"
@@ -61,4 +61,4 @@ output "vm_ids" {
 output "app_gateway_id" {
   value = module.my_app_gateway.app_gateway_id
 }
-*/
+
