@@ -4,7 +4,7 @@ provider "azurerm" {
 
 # Virtual Network Module
 module "my_vnet" {
-  source              = "../../moduls/virtual-network"
+  source              = "git::https://github.com/yourusername/moduls/virtual-network"
   vnet_name           = "my-vnet"
   address_space       = ["10.0.0.0/16"]
   subnet_count        = 2
